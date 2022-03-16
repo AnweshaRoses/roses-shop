@@ -1,4 +1,5 @@
 import Home from "./pages/Home";
+import Product from "./pages/Product";
 import Productlist from "./pages/ProductList";
 
 
@@ -7,7 +8,8 @@ function App() {
     <>
     <div className="App">
       {/* <Home/> */}
-      <Productlist/>
+      {/* <Productlist/> */}
+      <Product/>
     </div>
     </>
   );
