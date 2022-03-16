@@ -21,7 +21,7 @@ transform:translateX(${(props)=>props.slideIndex * -100}vw);
 const Arrow=styled.div`
 width: 50px;
 height: 50px;
-background-color: white;
+background-color: lightgray;
 border-radius: 50%;
 display: flex;
 align-items: center;
@@ -68,6 +68,11 @@ font-size: 20px;
 background-color:transparent;
 /* border:none; */
 cursor: pointer;
+transition: all 0.5s ease;
+    &:hover {
+      background-color: #e9f5f5;
+      transform: scale(1.1);
+    }
 `
 const Slider = () => {
     const[slideIndex,setSlideIndex]=useState(0)
@@ -86,7 +91,7 @@ const Slider = () => {
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
             {sliderItems.map(items=>
-            <Slide bg={items.bg}>
+            <Slide bg={items.bg} key={items.id}>
             <ImgContainer>
             <Image src={items.img}/>
             </ImgContainer>

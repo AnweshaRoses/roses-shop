@@ -39,6 +39,11 @@ const Button = styled.button`
     color:gray;
     cursor: pointer;
     font-weight: 600;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #e9f5f5;
+      transform: scale(1.1);
+    }
 `;
 
 const CategoryItem = ({ item }) => {

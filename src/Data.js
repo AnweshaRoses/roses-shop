@@ -38,3 +38,39 @@ export const sliderItems = [
       title: "LIGHT JACKETS",
     },
   ];
+  export const popularProducts = [
+    {
+      id:1,
+      img:"https://images.unsplash.com/photo-1585592049155-6642b799ab3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    },
+    {
+      id:2,
+      img:"https://images.unsplash.com/photo-1583846717393-dc2412c95ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
+    },
+    {
+      id:3,
+      img:"https://images.unsplash.com/photo-1595781572981-d63151b232ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNoaXJ0fGVufDB8fDB8d2hpdGV8&auto=format&fit=crop&w=900&q=60",
+    },
+    {
+      id:4,
+      img:"https://images.unsplash.com/photo-1583496702414-c3372525c6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1054&q=80",
+    },
+    {
+      id:5,
+      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    },
+    {
+      id:6,
+      img:"https://images.unsplash.com/photo-1582292644485-1d371362d3da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=982&q=80",
+    },
+    {
+      id:7,
+      img:"https://images.unsplash.com/photo-1559334417-a57bd929f003?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    },
+    {
+      id:8,
+      img:"https://images.unsplash.com/photo-1557120571-146a08ec7408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=952&q=80",
+    },
+  ]
+
+
