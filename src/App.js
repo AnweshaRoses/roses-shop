@@ -10,12 +10,12 @@ function App() {
   return (
     <>
     <div className="App">
-      {/* <Home/> */}
+      <Home/>
       {/* <Productlist/> */}
       {/* <Product/> */}
       {/* <Login/> */}
       {/* <Register/> */}
-      <Cart/>
+      {/* <Cart/> */}
     </div>
     </>
   );
