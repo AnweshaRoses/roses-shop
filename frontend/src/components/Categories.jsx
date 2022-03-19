@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { categories } from '../Data'
 import CategoryItem from './CategoryItem'
 import { mobile } from '../responsive'
+import { Link } from "react-router-dom";
 
 const Container= styled.div`
 display: flex;
@@ -15,7 +16,9 @@ const Categories = () => {
   return (
     <Container>
         {categories.map(item=>(
+          <Link to={`/products/${item.cat}`} >
             <CategoryItem item={item} key={item.id}/>
+        </Link>
         ))}
     </Container>
   )

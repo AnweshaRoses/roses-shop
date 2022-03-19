@@ -3,6 +3,7 @@ import {  Search,  ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 import { mobile } from '../responsive'
+import { Link } from "react-router-dom";
 
 const Container=styled.div`
 height: 60px;
@@ -20,6 +21,8 @@ const Left=styled.div`
 flex:1;
 display: flex;
 align-items: center;
+color:black;
+text-decoration:none;
 `
 const Language=styled.span`
     font-size:14;
@@ -44,6 +47,8 @@ ${mobile({fontSize:"24px"})};
 const Center=styled.div`
 flex:1;
 text-align:center;
+color:black;
+text-decoration:none;
 `
 const Right=styled.div`
 flex:1;
@@ -51,6 +56,8 @@ display: flex;
 align-items: center;
 justify-content: flex-end;
 ${mobile({justifyContent:"center", flex: 2})};
+color:black;
+text-decoration:none;
 `
 const MenuItem=styled.div`
 font-size: 14px;
@@ -60,7 +67,7 @@ ${mobile({fontSize:"12px", marginLeft:"10px"})};
 `
 const Navbar = () => {
   return (
-    <div  cl>
+    <div>
         <Container>
              <Wrapper>
                  <Left>
@@ -70,15 +77,26 @@ const Navbar = () => {
                          <Search style={{color:"gray", fontSize:"16px"}}/>
                      </SearchContainer>
                  </Left>
-                 <Center><Logo>Roses.</Logo></Center>
+                 <Center>
+                     <Link to="/" style={{color:"black",textDecoration:"none"}}  >
+                     <Logo>Roses.</Logo>
+                     </Link>
+                </Center>
                  <Right>
+                    <Link to="/register" style={{color:"black",textDecoration:"none"}}  >
                      <MenuItem>Register</MenuItem>
+                     </Link>
+
+                     <Link to="/login" style={{color:"black",textDecoration:"none"}}  >
                      <MenuItem>Sign-In</MenuItem>
+                     </Link>
+                     <Link to="/cart" style={{color:"black",textDecoration:"none"}} >
                      <MenuItem>
                      <Badge badgeContent={4} color="primary">
                         <ShoppingCartOutlined/>
                      </Badge>
                      </MenuItem>
+                     </Link>
                      </Right>
              </Wrapper>
         </Container>

@@ -8,6 +8,8 @@ import Footer from "../components/Footer";
 import { mobile } from "../responsive";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const Container = styled.div``;
 
@@ -42,13 +44,13 @@ const Option = styled.option``;
 const ProductList = () => {
   const location=useLocation();
   const cat=location.pathname.split("/")[2];
-  const [filter,setFiters]=useState({})
+  const [filters,setFiters]=useState({})
   const [sort,setSort]=useState("newest")
 
   const handleFilters=(e)=>{
     const value=e.target.value;
     setFiters({
-      ...filter,
+      ...filters,
       [e.target.name]:value,
     })
   }
@@ -65,12 +67,13 @@ const ProductList = () => {
             <Option disabled>
               Color
             </Option>
-            <Option>White</Option>
-            <Option>Black</Option>
-            <Option>Red</Option>
-            <Option>Blue</Option>
-            <Option>Yellow</Option>
-            <Option>Green</Option>
+            <Option>white</Option>
+            <Option>black</Option>
+            <Option>red</Option>
+            <Option>blue</Option>
+            <Option>yellow</Option>
+            <Option>green</Option>
+            <Option>pink</Option>
           </Select >
           <Select name="size"  onChange={handleFilters}>
             <Option disabled >
@@ -92,7 +95,9 @@ const ProductList = () => {
           </Select>
         </Filter>
       </FilterContainer>
-      <Products cat={cat} filters={filter} sort={sort} />
+      <Link to="/product/1">
+      <Products cat={cat} filters={filters} sort={sort} />
+      </Link>
       <Newsletter />
       <Footer />
     </Container>

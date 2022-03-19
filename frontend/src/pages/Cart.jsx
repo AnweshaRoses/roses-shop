@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
@@ -168,7 +169,9 @@ const Cart = () => {
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
+          <Link to="/products/1" style={{color:"black",textDecoration:"none"}}>
           <TopButton>CONTINUE SHOPPING</TopButton>
+          </Link>
           <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
